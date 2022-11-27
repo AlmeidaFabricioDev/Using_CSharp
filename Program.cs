@@ -10,10 +10,12 @@
                             Está é a penultima linha
                             Esta é a última linha";
 
+            string item; //Criamos uma variável do tipo string com o nome de item 
+
             using (var leitor = new StringReader(linhas)) //Aqui utilizamos o using pois está instrução fornece uma abordagem melhor para destruição de arquivos
                                                           //criamos a variável leitor do tipo var que recebe a Classe StringReader derivada da classe TextReader que fará a leitura do arquivo linhas.
             {
-                string item; //Criamos uma variável do tipo string com o nome de item 
+                
                 do //Estrutura de repetição Do while (Faça enquanto), irá executar se o arquivo dentro de item se for direfente de nulo.
                 {
                     item = leitor.ReadLine(); //Item recebe o leitor que é o tipo var(maneira implícita ou indireta de definir os dados),
